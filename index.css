@@ -1,0 +1,135 @@
+.login {
+     letter-spacing: 1px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.test {   
+     font-weight: bold;
+}
+body{
+     background-color:#F6f6EF;    
+     margin: 10px 60px;
+}
+
+.popup {
+     position: fixed;
+     top: 430px;
+     left: 50%;
+     transform: translate(-50%,-50%);
+}
+
+.popup:hover {
+     position: fixed;
+     top: 430px;
+     left: 50%;
+     transform: translate(-50%,-50%);
+}
+
+.contentBox {
+     position: relative;
+     width: 400px;
+     height:200px;
+     background: rgb(73, 90, 245);
+     border-radius: 20px;
+     display:flex;
+     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contentBox .content {
+     position: relative;
+     width: 800px;
+     height:75px;
+     left: 78px;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     color:azure;
+}
+
+
+.contentBox .extra {
+     position: relative;
+     width: 450px;
+     height:220px;
+     left: -100px;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     color:azure;
+}
+
+.close {
+     position: absolute;
+     top: 149px;
+     right:180px;
+     width: 40px;
+     height: 40px;
+     color:rgb(255, 255, 255);
+     background-color: rgb(73, 90, 245);
+     cursor: pointer;
+}
+
+.close :hover {
+     /* background-color: rgb(128, 139, 240); */
+     background-color: green;
+     box-shadow: 1px 2px 4px rgb(128, 139, 240);
+}
+
+
+.top-bar {
+     background-color: skyblue;
+     padding: 0 40px;
+}
+
+.navbar {
+     position: absolute;
+     top: 19px;
+     right: 80px;
+}
+
+.logout {
+     color: black;
+     font-size: larger;
+}
+
+.post {
+     color: black;
+     font-size: larger;
+     position: absolute;
+     right: 80px;
+}
+
+
+h1, h4, ol {
+     margin: 0;
+}
+p {
+     margin: 5px 0;
+}
+
+
+.comments {
+     margin: 7px 0;
+}
+.comment {
+     margin: 10px 0;
+}
+.row {
+     padding: 5px 0;
+}
+.bottom, .top-comment {
+     display: flex;
+     color: grey;
+     font-size: 12px;
+}
+.timestamp {
+     padding-right: 10px;
+}
+.comment-ts {
+     padding-left: 5px;
+}
+
+.yes {
+     color: black;
+}
+

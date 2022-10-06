@@ -1,0 +1,38 @@
+body {
+     min-height: 100vh;
+     background: rgb(150, 216, 236);
+}
+
+
+#main {
+     background-color: rgb(131, 126, 126);
+     width: 620px;
+     height: 280px;
+     border-radius: 30px;
+}
+
+h1 {
+     color:rgb(255, 255, 255);
+     background-color: black;
+     border-top-right-radius: -30px;
+     border-bottom-left-radius: -30px;
+     text-transform: uppercase;
+}
+
+.text {
+     background-color: rgb(199, 199, 199);
+     color: white;
+     width: 250px;
+     font-weight: bold;
+     font-size: 17px;
+     border:none;    
+}
+
+#sub {
+    padding: 10px;
+    width:120px;
+    color:white;
+    background:lightblue;
+    border:none;
+}
+
