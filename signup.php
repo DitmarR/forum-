@@ -38,17 +38,17 @@ session_start();
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" type="text/css" href="signup.css" />
-     <title>Sign-up</title>
+     <link rel="stylesheet" type="text/css" href="./CSS/signup.css" />
+     <title id="title">Sign-up</title>
 </head>
 <body>
      <center>
           <div id="main">
-               <h1>Sign up</h1>
+               <h1 id="signup">Sign up</h1>
                <form method="POST">
                 <input type="text" name="username" class="text" autocomplete="off" required
                 placeholder="username"><br><br>
-                <input type="email" name="email" class="text" required placeholder="email"><br><br>
+                <input type="email" name="email" class="text" required placeholder="email" autocomplete="off"><br><br>
                 <input type="password" name="password" class="text" required placeholder="password"><br><br>
                 <input type="password" name="password" class="text" required placeholder="repeat password"><br><br>
                 <br>

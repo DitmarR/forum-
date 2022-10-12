@@ -16,9 +16,9 @@ session_start();
 <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" type="text/css" href="acc.css" />
+     <link rel="stylesheet" type="text/css" href="./CSS/acc.css" />
 	<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-	<title>MyForum</title>
+	<title id="title">MyForum</title>
 </head>
 <body>
           </div>
@@ -31,13 +31,13 @@ session_start();
 	<div class="top-bar">
 		<h1>𝕄𝕪𝔽𝕠𝕣𝕦𝕞</h1>
 	</div>
-
+<span id="acc-info">
      <div class="account">
           <h3 class="user1"><?php echo $user_data['username']; ?></h3>
           <h3 class="user2"><?php echo $user_data['email']; ?></h3>
       </div>
 <a class="back" href="index.php">ㅤㅤㅤㅤㅤㅤ</a>
-
+</span>
 
 
 

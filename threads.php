@@ -1,13 +1,19 @@
 <?php
+
 session_start();
 	$_SESSION;
 
+     date_default_timezone_set("America/Chicago");
 	include("connect.php");
 	include("functions.php");
+     include ("posts.php");
+     include("connect2.php");
 
-	$user_data = check_login($conn);
-	
+	$user_data = check_login($conn)
+    
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en-GB">
@@ -20,26 +26,19 @@ session_start();
 	<title>MyForum</title>
 </head>
 <body>
-<div class="popup">
-          <div class="contentBox">
-               <div class="content">
-                    <h1 id="login">Hello, <?php echo $user_data['username']; ?>!</h1>
-               </div>
-               <div class="extra">
-                    <h3>Succesfully Logged in!</h3>
-               </div>
-               <button class="close"><big>OK</big></button>
-          </div>
-     </div>
-     <div class="navbar">
-          <nav>
-          <a class="post" href="threads.php">Post</a>
-          <a class="logout" href="acc.php">Account</a>
-          </nav>
-     </div>
-	<div class="top-bar">
-		<h1 id="title">𝕄𝕪𝔽𝕠𝕣𝕦𝕞</h1>
+<div class="top-bar">
+		<h1>𝕄𝕪𝔽𝕠𝕣𝕦𝕞</h1>
 	</div>
+<div class="main">
+     <p3 class="yes">ㅤ</p3>
+     <p1 class="username">Post as <?php echo $user_data['username'];?></p1>
+
+<form method='post' action='./SADJIO2.PHP'>
+     <input type='hidden' name='uid' value='<?php echo $user_data['username']; ?>'>
+     <textarea class="area" name='message'></textarea><br>
+     <button type='submit' name='commentSubmit'><p1>post</p1></button>
+</form>
+</div>
 
      
 <ol>
@@ -91,29 +90,12 @@ session_start();
 </span>
 
 </ol>
+<a class="back" href="index.php">ㅤㅤㅤㅤㅤㅤ</a>
 
+<?php
 
-
-	<br>
-
-     <script src="index.js"></script>
-	<script>
-          window.addEventListener("load", function(){
-          setTimeout(
-               function open(event){
-                    document.querySelector(".popup").style.display = "block";
-
-               }
-          )
-     })
-
-     document.querySelector(".close").addEventListener
-     ("click", function(){
-          document.querySelector(".popup").style.display = "none";
-     })
-
-  
-     </script>
+getPosts($con);
+?>  
 
 
 </body>

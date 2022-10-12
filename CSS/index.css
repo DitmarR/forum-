@@ -18,13 +18,6 @@ body{
      transform: translate(-50%,-50%);
 }
 
-.popup:hover {
-     position: fixed;
-     top: 430px;
-     left: 50%;
-     transform: translate(-50%,-50%);
-}
-
 .contentBox {
      position: relative;
      width: 400px;
@@ -70,8 +63,7 @@ body{
 }
 
 .close :hover {
-     /* background-color: rgb(128, 139, 240); */
-     background-color: green;
+     background-color: rgb(128, 139, 240);
      box-shadow: 1px 2px 4px rgb(128, 139, 240);
 }
 
@@ -133,3 +125,46 @@ p {
      color: black;
 }
 
+.post2 {
+     color: black;
+     font-size: larger;
+     position: absolute;
+     right: 900px;
+     top: 900px;
+}
+
+.post2 :hover {
+     background:rgb(206, 204, 204);
+}
+
+.no {
+     left: 100px;
+     
+
+}
+
+.back {
+     position:absolute;
+     top: 20px;
+     right: 1653px;
+     font-size: 28px;
+     color: #F6F6EF;
+}
+
+
+
+.threads2 {
+     display: flex;
+     color: grey;
+     font-size: 12px;
+
+}
+
+ .zei {
+     text-decoration: none !important;
+     
+}  
+
+.hij {
+     text-decoration: none !important;
+}

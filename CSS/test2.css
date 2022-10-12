@@ -87,3 +87,34 @@ button {
 .comment-box .uid {
      color: aquamarine;
 }
+
+.popup {
+     display: block;
+     margin: 10px 0;
+     height:22px;
+     width:85px;
+     background-color: rgb(110, 110, 110);
+     cursor: pointer;
+     border-radius: 12px;
+     border-color: rgb(110, 110, 110);
+     position:absolute;
+     top: 300px;
+     right: 1000px;
+}
+.area {
+     width:20%;
+     height:60px;
+     margin: 12px 0;
+     position:absolute;
+     top: 325px;
+     right: 700px;
+}
+
+.area2 {
+     position:absolute;
+     top: 375px;
+     right: 700px;
+     height:22px;
+     width:85px;
+
+}
