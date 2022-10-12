@@ -1,4 +1,6 @@
 <?php
+ini_set('error_reporting', E_ALL);
+ini_set( 'display_errors', 1 );
 
 session_start();
 	$_SESSION;
@@ -51,7 +53,7 @@ session_start();
                </h4>
              <div class="bottom">
                 <p class="timestamp">
-                     Ditmarㅤ23/09/2022 - 12:01 PM 
+                     Ditmar&nbsp;23/09/2022 - 12:01 PM
                 </p>
                 <p class="comments">
                       6 comments
@@ -67,14 +69,18 @@ session_start();
                  </h4>
                 <div class="bottom">
                  <p class="timestamp">
-                      Martinㅤ5/10/2022 - 1:12 PM 
+                      Martin&nbsp;5/10/2022 - 1:12 PM
                  </p>
                  <p class="comments">
                            0 comments
                       </p>
-             </div>
+                </div>
             </div>
      </li>
+                 <?php
+                 getPosts($con);
+
+                 ?>
 </span>
 
 <span id="contacts">
@@ -94,7 +100,7 @@ session_start();
 
 <?php
 
-getPosts($con);
+//getPosts($con);
 ?>  
 
 
